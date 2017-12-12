@@ -1,0 +1,25 @@
+{
+  "name": "content_scraper",
+  "version": "1.0.0",
+  "description": "website scraper for shirts4mike.com for all 8 tee shirts",
+  "main": "scraper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scraper.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akashs09/Treehouse-fsjs-project6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akashs09/Treehouse-fsjs-project6/issues"
+  },
+  "homepage": "https://github.com/akashs09/Treehouse-fsjs-project6#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "json2csv": "^3.11.5",
+    "request": "^2.83.0"
+  }
+}
