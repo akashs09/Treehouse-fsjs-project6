@@ -12,7 +12,8 @@
 Initiate get request with host shirts4mike
 */
 
-    const request = http.get('http://www.shirts4mike.com/shirts.php', response => {
+  /* use http://www.shirts4mike.com/pants.php to ge the 404 error*/
+    const request = http.get('http://www.shirts4mike.com/pants.php', response => {
 
         if (response.statusCode === 200) {
             let body = '';
