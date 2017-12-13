@@ -13,7 +13,7 @@ Initiate get request with host shirts4mike
 */
 
   /* use http://www.shirts4mike.com/pants.php to ge the 404 error*/
-    const request = http.get('http://www.shirts4mike.com/pants.php', response => {
+    const request = http.get('http://www.shirts4mike.com/shirts.php', response => {
 
         if (response.statusCode === 200) {
             let body = '';
@@ -33,6 +33,7 @@ Initiate get request with host shirts4mike
               let err = new Error();
               err.name = 'Scraper-Error: No page to scrape';
               err.message = `There was a(n) ${response.statusCode} error while retrieving host site`;
+              console.log(`${err.name}: ${err.message}`);
               printErrorMsg(err);
           }
     });
@@ -43,6 +44,7 @@ Initiate get request with host shirts4mike
           let err1 = new Error();
           err1.name = 'Scraper-Error: No page to scrape';
           err1.message = `There was no response from ${err.hostname} or you do not have an active internet connection`;
+          console.log(`${err1.name}: ${err1.message}`);
           printErrorMsg(err1);
         });
 
